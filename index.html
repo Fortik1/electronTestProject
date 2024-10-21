@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список пользователей</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid black; text-align: left; }
+        th { background-color: #f4f4f4; }
+
+        #addUserForm {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Пользователи</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Имя пользователя</th>
+            </tr>
+        </thead>
+        <tbody id="usersList">
+
+        </tbody>
+    </table>
+    <button id="buttonAddUser">Добавить пользователя</button>
+
+    <div id="addUserForm">
+        <h2>Новый пользователь</h2>
+        <label for="userName">Имя:</label>
+        <input type="text" id="userName" required>
+        <br><br>
+        <button type="button" id="addUserButton">Добавить пользователя</button>
+    </div>
+    <script>
+        console.log("HTML loaded");
+    </script>
+    <script src="render.js"></script>
+</body>
+</html>
